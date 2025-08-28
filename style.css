@@ -50,3 +50,9 @@ footer{padding:26px 0;color:#475569}
 #gate .panel{max-width:520px;background:#0b1220;border:1px solid #1e293b;border-radius:18px;padding:22px}
 #gate input{width:100%;padding:12px;border-radius:10px;border:1px solid #334155;background:#0b1220;color:#fff;margin-top:8px}
 @media print{ header,#gate,#themeToggle{display:none} body{background:#fff} .card{border-color:#e5e7eb} }
+/* Unterzeile im H1 */
+.h1-sub{display:block;font-size:clamp(18px,3.3vw,28px);font-weight:600;color:#334155}
+
+/* Kalender-Button (nicht blau) */
+.btn.calendar{background:#f1f5f9;border-color:#cbd5e1;color:#0f172a}
+.btn.calendar:hover{background:#e2e8f0}
