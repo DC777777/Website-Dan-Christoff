@@ -1,0 +1,69 @@
+
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kontakt – Dan Christoff</title>
+  <meta name="description" content="Kontakt und PDF-Lebenslauf.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="gate" aria-live="polite">
+  <div class="panel">
+    <h2>Privater Bewerbungslink</h2>
+    <p>Bitte scanne den QR-Code oder gib den Zugangscode ein.</p>
+    <form id="gateForm">
+      <label for="pin">Zugangscode</label>
+      <input id="pin" type="text" inputmode="text" autocomplete="off" placeholder="Code eingeben">
+      <button class="btn primary" type="submit">Öffnen</button>
+      <p class="muted" style="margin-top:8px;font-size:12px">Hinweis: einfache Zugangsbremse – nicht für sensible Daten.</p>
+    </form>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Navigation">
+      <div class="brand">Dan Christoff</div>
+      <div class="navlinks">
+        <a href="index.html">Start</a>
+        <a href="profil.html">Profil</a>
+        <a href="erfahrung.html">Erfahrung</a>
+        <a href="kontakt.html">Kontakt</a>
+        <button id="themeToggle" class="btn ghost" aria-label="Dark Mode umschalten">🌗</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="content" class="wrap fade" style="display:none">
+
+<section class="grid cols-2">
+  <div class="card">
+    <h1>Kontakt</h1>
+    <p><strong>E-Mail:</strong> <a href="mailto:Dan.Christoff@web.de">Dan.Christoff@web.de</a></p>
+    <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn primary" href="mailto:Dan.Christoff@web.de?subject=Kennenlernen">📅 Kennenlernen anfragen</a>
+      <a class="btn" href="cv.pdf" download>📄 Lebenslauf (PDF)</a>
+    </div>
+  </div>
+  <div class="card">
+    <h2>Hinweis zur Vertraulichkeit</h2>
+    <p>Diese Website ist nicht über Suchmaschinen auffindbar. Zugriff nur per Link/QR mit Zugangscode.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
+    <div>© 2025 · Dan Christoff</div>
+    <div>Gemacht mit ❤️ und Fokus auf Menschen</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
