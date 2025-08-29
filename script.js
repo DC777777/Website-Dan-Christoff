@@ -1,4 +1,4 @@
-const TOKEN = "dc-2025-physio";
+const TOKEN = "BewerbungDC";
 function initGate(){
   const gate = document.getElementById('gate');
   const content = document.getElementById('content');
