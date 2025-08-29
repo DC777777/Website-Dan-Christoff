@@ -60,3 +60,52 @@ footer{padding:26px 0;color:#475569}
 /* Clean-Button (neutral, nicht blau) */
 .btn.clean{background:#ffffff;border-color:#cbd5e1;color:#0f172a;box-shadow:none}
 .btn.clean:hover{background:#f8fafc;border-color:#94a3b8}
+
+/* =============  Basis: Elemente passen sich an  ============= */
+img, video { max-width: 100%; height: auto; display: block; }
+.avatar { width: 100%; max-width: 340px; margin: 0 auto; }
+
+/* Buttons bequem klickbar */
+.btn { min-height: 44px; padding: 10px 14px; }
+
+/* Formularfelder auf Touch optimieren */
+input, button, select, textarea { font-size: 16px; }
+
+/* =============  Breakpoint 1: Tablets & kleine Laptops  ============= */
+@media (max-width: 900px) {
+  .wrap { padding-left: 16px; padding-right: 16px; }
+
+  /* 2-Spalten-Layouts -> 1 Spalte */
+  .grid.cols-2 { grid-template-columns: 1fr !important; gap: 16px; }
+
+  /* Hero: Bild unter den Text setzen */
+  .hero .grid { grid-template-columns: 1fr !important; }
+  .hero .card { order: 2; }
+  .hero .card img { margin-top: 8px; }
+
+  /* Buttons in Zeile umbrechen */
+  .badges, .hero .inner > div > div { flex-wrap: wrap; }
+}
+
+/* =============  Breakpoint 2: Smartphones  ============= */
+@media (max-width: 600px) {
+  /* Typografie: größer & luftiger */
+  h1 { font-size: clamp(24px, 7vw, 32px); line-height: 1.2; }
+  .h1-sub { font-size: clamp(14px, 4.2vw, 18px); }
+
+  /* Karten: weniger Außenabstand */
+  .card { padding: 14px; }
+
+  /* Navigation: Links umbrechen und zentriert */
+  nav .navlinks { flex-wrap: wrap; gap: 8px; justify-content: center; }
+
+  /* Gate (Passwort) auf volle Breite */
+  #gate .card, .gate .card { width: 100%; max-width: 540px; margin: 0 auto; }
+
+  /* Buttons – volle Breite, wenn nötig */
+  .btn-group, .hero .inner > div > div { width: 100%; }
+  .btn-group .btn, .hero .inner > div > div .btn { flex: 1 1 160px; }
+
+  /* Abstände unten klein halten */
+  section { margin-bottom: 18px; }
+}
